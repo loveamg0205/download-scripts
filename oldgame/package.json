@@ -1,5 +1,11 @@
 {
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2"
-  }
+    "cheerio": "^1.0.0-rc.2",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
